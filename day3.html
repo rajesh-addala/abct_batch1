@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCT Batch 01</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7l" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body class="light-mode">
+    <!-- Header Section -->  
+        <!-- Fixed Navbar Below Heading -->
+        <div class="d-flex flex-column">
+            <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand" href="/">ABCT Batch 01</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/classes.html">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tasks.html">Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#notes">Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-dark" id="theme-switch">Switch Theme</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            </div>
+            <div>
+                <div class="abct-home d-flex flex-column">
+                    <div class="header-container">
+                        <a href="https://www.abct.in/"><img class="abct-logo" src="https://www.abct.in/assets/img/logo/logo.svg" alt="Logo 1"></a>
+                        <h1 class="abct-heading">Amaravathi Bhavani Charitable Trust Skill Development Program</h1>
+                        <a href="https://www.amaravathisoftware.com/"><img class="asi-logo" src="https://www.abct.in/assets/img/logo/AmaravathiSoftware.png" alt="Logo 2"></a>
+                    </div>
+            </div>
+        </div>    
+
+        <div>
+            <div class="container">
+      
+              <div class="row">
+      
+                <div class="col-lg-12">
+                    <h1 class="day-heading">Day 03</h1>
+                  <br>
+
+                  <h4 class="topics-heading">Topics Covered</h4>
+                  <div style="margin:20px;">
+                    <!--HTML-->
+                        <h6 style="margin-left: 5px;" class="vs-code"><strong>1. Creating Dropdowns </strong><span>(Refer <a href="https://www.w3schools.com/Css/css_dropdowns.asp" style="color:green;">W<sup>3</sup>Schools</a>)</span></h6>
+                            
+                        <h6 style="margin-left: 5px;" class="vs-code"><strong><a href="https://www.w3schools.com/cssref/pr_class_position.php">2. CSS Position Property</a></strong></h6>
+                                <ol style="list-style-type: none;">
+                                    <li><p>The position property in CSS determines how an element is positioned in the document flow, and it plays a crucial role in controlling where a dropdown menu appears. When used for a dropdown, each value of the position property affects how the dropdown is positioned in relation to other elements and the viewport. Here's what happens with each of the most commonly used position values:</li></p></li>
+                                </ol>
+                                <ol style="list-style-type: disc;"> 
+                                    <li><b>static </b>: Default, follows normal document flow, no positioning offsets.</li>
+                                    <li><b>relative </b>: Positioned relative to its normal position, allowing offsets without affecting surrounding content.</li>
+                                    <li><b>absolute </b>: Positioned relative to the nearest positioned ancestor or the document, removed from normal flow.</li>
+                                    <li><b>fixed </b>: Positioned relative to the viewport, stays in place when scrolling, removed from normal flow.</li>
+                                    <li><b>sticky </b>: Behaves like relative until it reaches a threshold, then sticks in place like fixed.</li>
+                                    <li style="list-style-type: none;">and many more...</li>
+                                    For dropdown menus, absolute is often used because it allows you to position the menu relative to its trigger element, creating the effect of a floating dropdown that doesn't disturb the page layout. 
+                                </ol>
+                        <h6 style="margin-left: 5px;" class="vs-code"><strong><a href="https://www.w3schools.com/cssref/pr_class_display.php">3. CSS Display Property</a></strong></h6>
+                                <ol style="list-style-type: none;">
+                                <li><p>The display property in CSS defines how an element is displayed on the webpage. It controls the layout behavior of an element, including whether it generates a block, inline, or other layout. Here’s a breakdown of the most common display values and what happens when you apply each of them to an element:</li></p></li>
+                                </ol>
+                                <ol style="list-style-type: disc;"> 
+                                    <li><b>block </b>: Takes up the full width, starts on a new line.</li>
+                                    <li><b>inline </b>: Takes only as much space as necessary, stays inline.</li>
+                                    <li><b>inline-block </b>: Like inline, but can set width and height.</li>
+                                    <li><b>none </b>: Hides the element, removing it from the document flow.</li>
+                                    <li style="list-style-type: none;">and many more...</li>
+                                    The display property is fundamental in controlling layout and should be chosen carefully based on how you want elements to behave in your design. 
+                                </ol>
+
+                        <h6 style="margin-left: 5px;" class="vs-code"><strong><a href="https://www.w3schools.com/html/html_images.asp">4. HTML Images</a></strong></h6>
+                        <ol style="list-style-type: disc;">
+                            <li><p><a href="https://www.w3schools.com/cssref/pr_background-position.php" class="vs-code">CSS Background Image-position property</a></p></li>
+                    
+                                <ol style="list-style-type:lower-roman;"> 
+                                <li>background-repeat</li>
+                                <li>background-position</li>
+                                <li>background-attachment</li>
+                                <li>background-size</li>
+                                </ol>   
+                        </ol>
+                    
+                        <h6 style="margin-left: 5px;"><strong>Other Concepts </strong>:</h6>
+                            <ul style="list-style-type:disc;">
+                                <a href="https://codepen.io/tag/menu"><li>codepen website</li></a>
+                                <ol>
+                                    <li>Menus</li>
+                                    <li>Headers</li>
+                                    <li>Footers</li>
+                                    <li style="list-style-type: none;">and many more...</li>
+                                </ol>
+                               
+                            </div>
+                            <br>
+                            <div class="card-body text-center">
+                                <a href="/day2.html" ><button class="btn btn-info" style="color:white; margin-right:10px;"><< Day 02</button></a>
+                                <a href="/day4.html" ><button class="btn btn-info" style="color:white;">Day 04 >></button></a>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>        
+
+    <script src="script.js"></script>
+
+        
+    
+</body>
+</html>

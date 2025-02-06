@@ -1,0 +1,670 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: bisque;
+    color: black;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+/* Header Section */
+.header-container {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.abct-home{
+    margin-top:50px;
+}
+
+.abct-logo, .asi-logo {
+    width: 180px;
+    height: auto;
+}
+
+.abct-heading {
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffc800, #00a0f7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
+    margin:10px;
+}
+
+@media (max-width: 768px) {
+    .abct-heading {
+        font-size: 18px;
+    }
+    
+
+}
+
+@media (max-width: 480px) {
+    .abct-logo, .asi-logo {
+        width: 70px;
+    }
+
+    .abct-heading {
+        font-size: 12px;
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    margin-bottom:20px;
+    margin-top:0px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #323f4b;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff;
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-brand {
+    color: #323f4b;
+}
+
+
+
+/* Centered Card */
+.centered-card {
+    max-width: 650px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.custom-button{
+    color: white;
+    background-color: #ffd900;
+    width: 100px;
+    height: 35px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.carousel-item img {
+    min-height: 150px;
+    object-fit: cover;
+}
+
+.counter-container {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Dark Mode Adjustments */
+
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #f1f1f1; /* Lighter text for dark mode */
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link:hover {
+    color: #ffd700; /* Highlighted link color */
+}
+
+.dark-mode .navbar-light .navbar-brand {
+    color: #f1f1f1; /* Lighter text for dark mode */
+}
+
+.dark-mode .navbar-light .navbar-toggler-icon {
+    background-color: #f1f1f1; /* Lighter icon color */
+}
+
+.dark-mode .centered-card {
+    background-color: #3e3e3e;
+}
+
+.dark-mode .abct-heading {
+    color: #ffd700;
+    background: linear-gradient(to bottom, #3a3a3a, #707070); /* Darker background for heading */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .btn-dark {
+    background-color: #f1f1f1;
+    color: #2b2b2b;
+}
+
+.dark-mode .btn-dark:hover {
+    background-color: #ffd700;
+    color: #1c1c1c;
+}
+.dark-mode .navbar{    
+        background-color: #000000 !important;
+        margin-top:5px;
+}
+
+
+
+.classes-container{
+    margin:20px;
+    padding:20px;
+}
+.classes-heading{
+    font-family: "Roboto";
+    font-size: 24px;
+    color:rgb(255, 153, 0);
+    font-weight: 800;
+}
+.days-item{
+    background-color: #e6f6ff;
+    color:#000000;
+    width: auto;
+    min-height:40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(255, 153, 0)  ;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+    padding:10px;
+    font-family:"Roboto";
+    font-size:16px;
+    font-weight:500;
+}
+.dark-mode .days-item{
+    background-color: #646769fe;
+    color:white;
+}
+.day-heading{
+    background-color: #e6f6ff;
+    color:#000000;
+    width: auto;
+    min-height:40px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(255, 153, 0)  ;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+    padding:10px;
+    font-family:"Roboto";
+    font-size:16px;
+    font-weight:500;
+    margin:20px;
+    text-align: center;
+}
+.day-title{
+    color:#00bcf6;
+    font-family:'Roboto', sans-serif;
+    font-size:18px;
+    font-weight:600;
+    margin-left:20px;
+}
+.dark-mode .day-title{
+    color:#e6f6ff;
+}
+@media (max-width: 480px) {
+    .days-item{
+        font-size: 12px;
+        width:auto;
+    }
+    .day-title{
+        font-size:14px;
+    }
+}
+a:hover{
+    text-decoration: none;
+}
+.topics-heading{
+    font-size:18px;
+    color:green;
+}
+.dark-mode .topics-heading{
+    color:green;
+}
+
+.vs-code{
+    color:black;
+}
+.dark-mode .vs-code{
+    color:#ffffff;
+}
+a{
+    color:rgb(0, 136, 255);
+}
+.dark-mode a{
+    color:gold;
+}
+
+.tasks-container{
+    margin-bottom:20px;
+    margin-top: 0px;
+    padding:20px;
+}
+.gender-title{
+    font-size:16px;
+    font-weight:400;
+}
+
+.reg-form{
+    border:2px solid rgb(83, 49, 7);
+    border-radius:10px;
+    min-width:350px;
+    margin:auto;
+    padding:20px;
+    }
+@media (min-width: 768px) {
+    .reg-form{
+        min-width:55%;
+    }
+    
+}    
+
+/*Loading Animation*/
+.dots {
+    display: inline-block;
+    font-size: inherit;
+}
+
+.dots::after {
+    content: '...';
+    animation: dotsAnimation 1.5s steps(3, end) infinite;
+}
+
+@keyframes dotsAnimation {
+    0%, 20% {
+        content: '';
+    }
+    40% {
+        content: '.';
+    }
+    60% {
+        content: '..';
+    }
+    80%, 100% {
+        content: '...';
+    }
+}
+
+/*Day 3 Task: Creating Header,Footer, Navbar with Dropdown and Cards*/
+
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+.custom-nav-img {
+    height: 70px;
+    width: 80px;
+}
+
+.banner-section-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.banner-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.banner-caption {
+    color: #f5f7fa;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.custom-button {
+    color: white;
+    background-color: #d0b200;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.custom-outline-button {
+    color: #d0b200;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d0b200;
+    border-radius: 8px;
+}
+
+
+
+.wcu-section {
+    background-color: #f9fbfe;
+}
+
+.wcu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.wcu-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.wcu-card {
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 16px;
+    border-color: #e5eaf4;
+}
+
+.wcu-card-img {
+    height: 90px;
+    width: 87px;
+}
+
+.wcu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.wcu-card-description {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #7b8794;
+}
+
+.offers {
+    color: #323f4b;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.explore-menu-section {
+    background-color: white;
+}
+
+.explore-menu-section-heading {
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+    color: #183b56;
+}
+
+.menu-item-card {
+    border-radius: 16px;
+}
+
+.menu-item-image {
+    border-radius: 16px;
+}
+
+.menu-card-title {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 24px;
+    color: #323f4b;
+}
+
+.menu-item-link {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.healthy-food-section {
+    background-color: #f9fbfe;
+}
+
+.healthy-food-section-img {
+    width: 270px;
+}
+
+.healthy-food-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.healthy-food-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.custom-button {
+    color: white;
+    background-image: linear-gradient(#d0b200, #a58d00);
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+
+.delivery-and-payment-section {
+    background-color: white;
+}
+
+.delivery-and-payment-section-img {
+    width: 270px;
+}
+
+.delivery-and-payment-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.delivery-and-payment-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+}
+
+
+
+.thanking-customers-section {
+    background-image: radial-gradient(#fff8db, #fae38c);
+}
+
+.thanking-customers-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.thanking-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.thanking-customers-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+
+.footer-section {
+    background-color: #0d2436;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.thanking-customers-section-modal-title {
+    color: #d0b200;
+    font-weight: 800;
+}
+
+/*Drop down CSS*/
+ /* The dropdown container */
+ .dropdown {
+    float: left;
+    overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #323f4b;
+    font-family: "Roboto";
+    font-weight:800;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0;
+    padding-top:8px; /* Important for vertical align on mobile phones */
+    }
+    .dark-mode .dropdown .dropbtn{
+        color:#ffffff;
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar .dropdown:hover .dropbtn {
+    background-color: red;
+    color:#ffffff;
+    }
+    .dark-mode .navbar .dropdown:hover .dropbtn {
+        background-color: white;
+        color:#000000;
+        }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    .dark-mode .dropdown-content{
+        background-color: #323f4b;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+    .dark-mode .dropdown-content a:hover{
+        background-color: black;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
