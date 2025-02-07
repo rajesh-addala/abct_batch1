@@ -25,6 +25,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom:8px;
 }
 .abct-home{
     margin-top:50px;
@@ -252,7 +253,7 @@ body {
     }
     .classes-heading{ 
         font-size: 12px;
-        max-width:100px;
+        max-width:200px;
     }
 }
 a:hover{
