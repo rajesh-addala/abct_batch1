@@ -7,7 +7,7 @@ body {
 
 /* Light Mode */
 .light-mode {
-    background-color: bisque;
+    background-color: rgb(147, 217, 231);
     color: black;
 }
 
@@ -164,7 +164,7 @@ body {
 
 
 .classes-container{
-    margin:20px;
+    margin:auto;
     padding:20px;
 }
 .classes-heading{
@@ -172,6 +172,7 @@ body {
     font-size: 24px;
     color:rgb(255, 153, 0);
     font-weight: 800;
+    text-align: center;
 }
 .days-item{
     background-color: #e6f6ff;
@@ -207,17 +208,17 @@ body {
     border-radius: 4px;
     padding:10px;
     font-family:"Roboto";
-    font-size:16px;
+    font-size:18px;
     font-weight:500;
     margin:20px;
     text-align: center;
 }
 .day-title{
-    color:#00bcf6;
+    color:#0492bd;
     font-family:'Roboto', sans-serif;
-    font-size:18px;
+    font-size:19px;
     font-weight:600;
-    margin-left:20px;
+    margin-left:40px;
 }
 .dark-mode .day-title{
     color:#e6f6ff;
@@ -229,6 +230,7 @@ body {
     }
     .day-title{
         font-size:14px;
+        margin-left:20px;
     }
 }
 a:hover{
