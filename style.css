@@ -184,12 +184,27 @@ body {
     background-color: white;
     font-weight: 800;
     text-align: center;
-    min-width:270px;
     padding:10px;
     border-radius: 8px;
     margin:auto;
 }
+.tasks-heading{
+    font-family: "Roboto";
+    font-size: 18px;
+    color:rgb(255, 153, 0);
+    background-color: white;
+    font-weight: 800;
+    max-width:220px;
+    text-align: center;
+    padding:10px;
+    border-radius: 8px;
+    margin:auto;   
+}
 .dark-mode .classes-heading{
+    color:#2b2b2b;
+    background-color: #ffea00;
+}
+.dark-mode .tasks-heading{
     color:#2b2b2b;
     background-color: #ffea00;
 }
@@ -254,6 +269,10 @@ body {
     .classes-heading{ 
         font-size: 12px;
         max-width:200px;
+    }
+    .tasks-heading{
+        font-size: 12px;
+        max-width:150px;
     }
 }
 a:hover{
