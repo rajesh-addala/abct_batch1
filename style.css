@@ -695,15 +695,14 @@ a{
     }
 
     /*--Footer--*/
-    .abct-footer{
-        background-color: white;
-        color:rgb(78,199,224);
+    .abct-marquee{
+        color:rgb(255, 255, 255);
         padding:5px;
         font-size:14px;
         margin-top:0px;
     }
     @media (max-width:480px){
-        .abct-footer{
+        .abct-marquee{
             height:18px;
             font-size:6px;
         }
