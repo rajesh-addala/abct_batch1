@@ -183,7 +183,7 @@ body {
     background-color: white;
     font-weight: 800;
     text-align: center;
-    width:270px;
+    min-width:270px;
     padding:10px;
     border-radius: 8px;
     margin:auto;
@@ -251,8 +251,8 @@ body {
         margin-left:20px;
     }
     .classes-heading{ 
-        font-size: 14px;
-        width:150px;
+        font-size: 12px;
+        max-width:100px;
     }
 }
 a:hover{
