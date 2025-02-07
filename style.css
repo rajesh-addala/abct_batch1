@@ -97,6 +97,15 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+@media (max-width: 480px){
+    .centered-card {
+        max-width: 400px;
+        margin: 30px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
 .custom-button{
     color: white;
     background-color: #ffd900;
@@ -241,7 +250,7 @@ body {
         font-size:11px;
         margin-left:20px;
     }
-    .classes-heading{
+    .classes-heading{ 
         font-size: 14px;
         width:150px;
     }
@@ -250,11 +259,12 @@ a:hover{
     text-decoration: none;
 }
 .topics-heading{
-    font-size:18px;
-    color:green;
+    font-size:20px;
+    color:white;
+    font-weight:600;
 }
 .dark-mode .topics-heading{
-    color:green;
+    color:rgb(255, 89, 0);
 }
 
 .vs-code{
@@ -682,4 +692,19 @@ a{
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
     display: block;
+    }
+
+    /*--Footer--*/
+    .abct-footer{
+        background-color: white;
+        color:rgb(78,199,224);
+        padding:5px;
+        font-size:14px;
+        margin-top:0px;
+    }
+    @media (max-width:480px){
+        .abct-footer{
+            height:18px;
+            font-size:6px;
+        }
     }
