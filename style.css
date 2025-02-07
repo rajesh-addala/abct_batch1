@@ -234,12 +234,16 @@ body {
 }
 @media (max-width: 480px) {
     .days-item{
-        font-size: 12px;
+        font-size: 9px;
         width:auto;
     }
     .day-title{
-        font-size:14px;
+        font-size:11px;
         margin-left:20px;
+    }
+    .classes-heading{
+        font-size: 14px;
+        width:150px;
     }
 }
 a:hover{
