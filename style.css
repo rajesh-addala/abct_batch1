@@ -169,10 +169,19 @@ body {
 }
 .classes-heading{
     font-family: "Roboto";
-    font-size: 24px;
+    font-size: 21px;
     color:rgb(255, 153, 0);
+    background-color: white;
     font-weight: 800;
     text-align: center;
+    width:270px;
+    padding:10px;
+    border-radius: 8px;
+    margin:auto;
+}
+.dark-mode .classes-heading{
+    color:#2b2b2b;
+    background-color: #ffea00;
 }
 .days-item{
     background-color: #e6f6ff;
