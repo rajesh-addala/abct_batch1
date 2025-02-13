@@ -225,7 +225,7 @@ body {
     font-size:16px;
     font-weight:500;
 }
-.dark-mode .days-item{
+.dark-mode .days-item, .days-item2{
     background-color: #646769fe;
     color:white;
 }
@@ -274,7 +274,7 @@ body {
     color:#e6f6ff;
 }
 @media (max-width: 480px) {
-    .days-item{
+    .days-item, .days-item2{
         font-size: 9px;
         width:auto;
     }
